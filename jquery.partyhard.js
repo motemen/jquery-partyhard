@@ -3,7 +3,7 @@
     $.fn.partyhard = function (options) {
         options = $.extend(options, {
             tag: 'party hard gif',
-            size: 'cover', // or 'contain'
+            size: 'contain', // or 'cover'
             interval: 10 // secs
         });
 
