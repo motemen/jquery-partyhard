@@ -7,7 +7,6 @@
             interval: 10 // secs
         }, options);
 
-        console.log(options);
         var apiKey = options.key || 'p40LyUPzKCKD0Sb5AJxzPFUy4kULrHhE41MFnBLHSRYarpPs8M';
 
         var target = this.length ? this : $(document.body);
