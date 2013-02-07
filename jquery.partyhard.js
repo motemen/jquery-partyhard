@@ -1,16 +1,14 @@
 (function ($) {
 
     $.fn.partyhard = function (options) {
-        options = $.extend(options, {
+        options = $.extend({
             tag: 'party hard gif',
             size: 'contain', // or 'cover'
             interval: 10 // secs
-        });
+        }, options);
 
-        var apiKey = options.key;
-        if (!apiKey) {
-            throw 'partyhard.jquery requires Tumblr API key. Get one at http://www.tumblr.com/oauth/register';
-        }
+        console.log(options);
+        var apiKey = options.key || 'p40LyUPzKCKD0Sb5AJxzPFUy4kULrHhE41MFnBLHSRYarpPs8M';
 
         var target = this.length ? this : $(document.body);
 
